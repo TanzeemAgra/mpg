@@ -1,0 +1,54 @@
+1. Docker
+2. Containers
+3. Image
+4. Volume
+5. Docker.hub
+
+
+setcontainer - setcontainer2
+
+new container - pull images from docker hub
+
+Dockerfile : text file; set of instruction 
+
+automation of docker images creation
+
+Intruction : 
+
+FROM : base images
+RUN :
+MAINTAINER :
+COPY
+ADD
+EXPOSE
+WORKDIR
+CMD
+
+
+Docker -> Container (Volume (Directory)) -> Images -> Dockerfile -> 
+
+chef/maven
+
+
+https://www.youtube.com/watch?v=TVmWZ4R_mcI
+
+
+
+https://www.youtube.com/watch?v=kE-6KDyf-0o
+
+
+Assalamualaikum Bhai.
+
+I can take the training in following technologies :
+
+1. Machnine Learning/ Deep Learning/ Segmentation using Python.
+2. Machine Learning Model Deployment using Django and PostgreSQL.
+3. DevOps and MLOps on AWS
+4. RPA using UiPath and AI Center.
+5. Wordpress and wooCommerce : E-Commerce Web Site
+6. Amazon Web Services (AWS)
+7. Julia Programming Language (Basic Level)
+
+kindly share the template, to prepare the roadmap for following technologies 
+
+Jazaka Allah

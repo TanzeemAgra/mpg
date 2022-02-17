@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>MPG</title>
+
+
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+
+
+
+<body style="background-color:powderblue;">
+
+<center><h1 style="color:#FF0000">This data is coming from MGP </h1></center>
+<center><h2>Enter the Expected Data </h2></center><br><br><br>
+<form action= "{% url 'result2' %}" enctype="multipart/form-data"  >
+
+{% csrf_token %}
+
+<table align="center">
+
+<tr><td>cylinders:<td><input type="text" required name="cylinders" value={{temp.cylinders}}></td></tr>
+<tr><td>displacement:<td><input type="text" required name="displacement" value={{temp.displacement}}></td></tr>
+<tr><td>horsepower:<td><input type="text" required name="horsepower" value={{temp.horsepower}}></td></tr>
+<tr><td>weight:<td><input type="text" required name="weight" value={{temp.weight}}></td></tr>
+<tr><td>acceleration:<td><input type="text" required name="acceleration" value={{temp.acceleration}}></td></tr>
+<tr><td>model_year:<td><input type="text" required name="model_year" value={{temp.model_year}}></td></tr>
+<tr><td>origin:<td><input type="text" required name="origin" value={{temp.origin}} ></td></tr>
+
+<tr><td><br>
+</table>
+
+
+{% if answer1 %}
+<center><h2 style="color:#FF6600">The MPG of your car is  {{answer1}} </h2>
+<h3 style="color:#009900">Thank for using MPG app </h3><br>
+</center>
+
+{% else %}
+<center>
+<button type ="submit" name="" value="submit" type ="submit" class="button button1">Submit</button>
+<button type ="reset" class="button button1">Reset</button>
+<button type ="submit" class="button button1">Save</button>
+</center>
+
+{% endif %}
+ 
+
+</form>
+
+</center>
+
+
+</body>
+</html>
